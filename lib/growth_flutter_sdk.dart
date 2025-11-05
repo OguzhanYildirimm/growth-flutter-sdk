@@ -20,6 +20,14 @@ import 'package:adjust_sdk/adjust_event.dart' as adjust;
 
 // RevenueCat
 import 'package:purchases_flutter/purchases_flutter.dart';
+export 'package:purchases_flutter/purchases_flutter.dart'
+    show
+        Package,
+        Offerings,
+        CustomerInfo,
+        PurchaseParams,
+        PurchaseResult,
+        PeriodType;
 
 /// Public configuration for initializing GrowthSdk.
 class GrowthSdkConfig {
@@ -444,7 +452,7 @@ class GrowthSdk {
       'price': product.price,
       'currency': product.currencyCode,
       'package_id': package.identifier,
-      'offering_id': package.offeringIdentifier,
+      'offering_id': package.presentedOfferingContext.offeringIdentifier,
     };
 
     await _trackEvent(
@@ -681,7 +689,7 @@ class GrowthSdk {
         'price': product.price,
         'currency': product.currencyCode,
         'package_id': package.identifier,
-        'offering_id': package.offeringIdentifier,
+        'offering_id': package.presentedOfferingContext.offeringIdentifier,
         if (placementId != null) 'placement_id': placementId,
         if (variantId != null) 'variant_id': variantId,
         ...extra,

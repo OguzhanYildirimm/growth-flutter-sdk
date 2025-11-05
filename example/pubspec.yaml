@@ -1,0 +1,21 @@
+name: growth_flutter_sdk_example
+description: Example app for growth_flutter_sdk
+publish_to: 'none'
+
+environment:
+  sdk: ^3.9.2
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  growth_flutter_sdk:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
