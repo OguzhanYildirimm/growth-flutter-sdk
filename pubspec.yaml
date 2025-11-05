@@ -1,7 +1,9 @@
 name: growth_flutter_sdk
 description: "Growth SDK for Flutter: Orchestrates Firebase (Analytics, Crashlytics, Remote Config, Auth), Adjust, and RevenueCat with identity linking, purchases, lifecycle auto-events, telemetry, and A/B helpers."
 version: 0.0.1
-homepage:
+homepage: https://github.com/OguzhanYildirimm/growth-flutter-sdk
+repository: https://github.com/OguzhanYildirimm/growth-flutter-sdk
+issue_tracker: https://github.com/OguzhanYildirimm/growth-flutter-sdk/issues
 
 environment:
   sdk: ^3.9.2
