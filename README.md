@@ -1,4 +1,4 @@
-## growth_flutter_sdk
+## Growth Flutter SDK 🆙📊📈 
 
 Flutter package to initialize and orchestrate Firebase (Analytics, Crashlytics, Remote Config, Auth), Adjust, and RevenueCat. It ensures device-based Firebase login, wires identities across SDKs, and enables event attribution to the correct user.
 
